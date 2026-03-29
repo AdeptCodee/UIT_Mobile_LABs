@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Speech_to_Text_Translator</string>
+    <string name="app_name">Speech Translator</string>
+    <string name="choose_lang">Chọn ngôn ngữ đích:</string>
+    <string name="lbl_original">Văn bản gốc:</string>
+    <string name="hint_waiting">Đang chờ bạn nói...</string>
+    <string name="lbl_translated">Bản dịch:</string>
+    <string name="hint_translated">Bản dịch sẽ hiện ở đây.</string>
+    <string name="btn_record_text">Bắt đầu ghi âm</string>
+
+    <string-array name="languages">
+        <item>Tiếng Việt</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+    </string-array>
 </resources>
