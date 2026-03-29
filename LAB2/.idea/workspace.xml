@@ -9,7 +9,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7192d81-2a91-434e-9806-1f1335108f21" name="Changes" comment="" />
+    <list default="true" id="cb32df3c-8b30-4e21-8124-6fe51c86e20a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Speech_to_Text_Translator/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +28,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\truon\.android\avd\Medium_Phone_2.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PhysicalDevice::serial=575877de]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -32,7 +42,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Speech_to_Text_Translator" type="f1a62948:ProjectNode" />
+                <item name="Android_Sentiment_Analysis_for_Vietnamese" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -46,11 +56,11 @@
   </component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\truon\.gradle\wrapper\dists\gradle-9.3.1-bin\23ovyewtku6u96viwx3xl3oks\gradle-9.3.1" javaHome="D:\Android\Android Studio\jbr" gradleVersion="9.3.1" />
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
+  "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="3BbvgTYMwRXfuM6cUZ7f5JMJq8Y" />
+  <component name="ProjectId" id="3Bc3pGXSesLoyQU5g5MvEhNMNjr" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -71,7 +81,7 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="Speech_to_Text_Translator.app" />
+      <module name="Android_Sentiment_Analysis_for_Vietnamese.app" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -145,11 +155,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f7192d81-2a91-434e-9806-1f1335108f21" name="Changes" comment="" />
-      <created>1774770695908</created>
+      <changelist id="cb32df3c-8b30-4e21-8124-6fe51c86e20a" name="Changes" comment="" />
+      <created>1774774711348</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1774770695908</updated>
+      <updated>1774774711348</updated>
     </task>
     <servers />
   </component>
