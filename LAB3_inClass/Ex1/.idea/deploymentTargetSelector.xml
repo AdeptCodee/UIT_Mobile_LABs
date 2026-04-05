@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-03-30T03:13:53.697915700Z">
+        <DropdownSelection timestamp="2026-04-04T16:48:26.430970300Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\truon\.android\avd\Medium_Phone_2.avd" />
+              <DeviceId pluginId="Default" identifier="serial=emulator-5554;connection=7560d48c" />
             </handle>
           </Target>
         </DropdownSelection>
