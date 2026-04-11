@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="834271af-ccbf-43fc-9f1d-6ff06493aba1" name="Changes" comment="" />
+    <list default="true" id="834271af-ccbf-43fc-9f1d-6ff06493aba1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/codelabs/paging/data/PagingSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../end/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../end/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,19 +28,30 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3BeGGy3Ee6Z5LmSxhOfkFVlIa9W" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Android App.app.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -46,7 +61,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/UIT/UIT-nam3/UIT-nam3-hk2/UIT-Android/UIT_Mobile_LABs/LAB3/Ex1/codelab-android-paging-main/advanced/start"
+    "last_opened_file_path": "D:/UIT/UIT-nam3/UIT-nam3-hk2/UIT-Android/UIT_Mobile_LABs/LAB3_inClass/codelab-android-paging-main/advanced/start"
   }
 }]]></component>
   <component name="RunManager">
