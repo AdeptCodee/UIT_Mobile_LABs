@@ -1,4 +1,4 @@
-package com.example.exercise // Nhớ đổi chữ 'exercise' thành tên project của bạn nhé
+package com.example.exercise
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -19,17 +19,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 1. Tìm cái "bàn ăn" (RecyclerView) mà chúng ta đã thiết kế trong file activity_main.xml
+        // 1. Tìm cái RecyclerView mà đã thiết kế trong file activity_main.xml
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
         // 2. Quy định cách sắp xếp: Danh sách cuộn dọc từ trên xuống dưới
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        // 3. Khởi tạo "người đầu bếp" (Adapter) và giao việc phục vụ bàn cho người này
+        // 3. Khởi tạo Adapter
         adapter = NewsAdapter()
         recyclerView.adapter = adapter
 
-        // 4. Gọi "trạm trung chuyển" (ViewModel) ra làm việc
+        // 4. Gọi ViewModel
         viewModel = ViewModelProvider(this)[NewsViewModel::class.java]
 
         // 5. Mở một luồng chạy ngầm để liên tục lắng nghe dữ liệu từ mạng tải về

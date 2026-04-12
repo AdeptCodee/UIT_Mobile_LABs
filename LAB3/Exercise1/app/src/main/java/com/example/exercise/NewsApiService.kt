@@ -1,4 +1,4 @@
-package com.example.exercise // Nhớ đổi tên theo project của bạn
+package com.example.exercise
 
 import retrofit2.http.GET
 import retrofit2.http.Query

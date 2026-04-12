@@ -1,4 +1,4 @@
-package com.example.exercise // Nhớ đổi tên chữ exercise thành tên project của bạn
+package com.example.exercise
 
 import android.view.LayoutInflater
 import android.view.View

@@ -1,4 +1,4 @@
-package com.example.exercise // Đổi thành tên project của bạn
+package com.example.exercise
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
@@ -13,9 +13,9 @@ class NewsPagingSource(
             // Nếu mới mở ứng dụng, bắt đầu tải từ trang 1
             val page = params.key ?: 1
 
-            // Gọi cỗ máy Retrofit đi lấy tin tức về chữ "android"
+            // Gọi cỗ máy Retrofit đi lấy tin tức về nội dung của query
             val response = service.getArticles(
-                query = "makeup tutorial",
+                query = "makeup",
                 pageSize = params.loadSize,
                 page = page,
                 apiKey = apiKey
