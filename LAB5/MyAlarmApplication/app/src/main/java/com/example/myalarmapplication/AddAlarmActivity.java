@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,7 +20,7 @@ public class AddAlarmActivity extends AppCompatActivity {
 
     TimePicker timePicker;
     Button btnSaveAlarm;
-    EditText etLabel; // Thêm biến để lấy nhãn báo thức
+    EditText etLabel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +29,12 @@ public class AddAlarmActivity extends AppCompatActivity {
 
         timePicker = findViewById(R.id.timePicker);
         btnSaveAlarm = findViewById(R.id.btnSaveAlarm);
-        etLabel = findViewById(R.id.etLabel); // Ánh xạ EditText từ giao diện
+        etLabel = findViewById(R.id.etLabel);
 
         btnSaveAlarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int hour, minute;
-
                 if (Build.VERSION.SDK_INT >= 23) {
                     hour = timePicker.getHour();
                     minute = timePicker.getMinute();
@@ -52,38 +52,47 @@ public class AddAlarmActivity extends AppCompatActivity {
                     calendar.add(Calendar.DATE, 1);
                 }
 
-                // Cài đặt AlarmManager (Giữ nguyên code chuẩn của bạn)
+                AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+                
+                // KIỂM TRA QUYỀN BÁO THỨC CHÍNH XÁC (Cho Android 12+)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    if (alarmManager != null && !alarmManager.canScheduleExactAlarms()) {
+                        Intent intentPerm = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
+                        startActivity(intentPerm);
+                        Toast.makeText(AddAlarmActivity.this, "Vui lòng cấp quyền báo thức chính xác!", Toast.LENGTH_LONG).show();
+                        return;
+                    }
+                }
+
                 Intent intent = new Intent(AddAlarmActivity.this, MyAlarmReceiver.class);
+                
+                // Dùng requestCode duy nhất để không bị ghi đè báo thức
+                int requestCode = (int) System.currentTimeMillis();
+                
                 int flags = PendingIntent.FLAG_UPDATE_CURRENT;
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     flags |= PendingIntent.FLAG_IMMUTABLE;
                 }
+                
                 PendingIntent pendingIntent = PendingIntent.getBroadcast(
-                        AddAlarmActivity.this, 0, intent, flags
+                        AddAlarmActivity.this, requestCode, intent, flags
                 );
 
-                AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
                 if (alarmManager != null) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
                     } else {
                         alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
                     }
-                    Toast.makeText(AddAlarmActivity.this, "Đã cài báo thức thành công lúc " + hour + ":" + minute, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddAlarmActivity.this, "Đã cài báo thức lúc " + hour + ":" + minute, Toast.LENGTH_SHORT).show();
                 }
 
-                // PHẦN MỚI: Đóng gói dữ liệu gửi về MainActivity
+                // Gửi dữ liệu về MainActivity để hiển thị lên màn hình
                 Intent resultIntent = new Intent();
                 resultIntent.putExtra("hour", hour);
                 resultIntent.putExtra("minute", minute);
-                // Tránh lỗi rỗng nếu chưa có etLabel trong XML
-                if (etLabel != null) {
-                    resultIntent.putExtra("label", etLabel.getText().toString());
-                } else {
-                    resultIntent.putExtra("label", "Báo thức mới");
-                }
+                resultIntent.putExtra("label", (etLabel != null && !etLabel.getText().toString().isEmpty()) ? etLabel.getText().toString() : "A New Alarm!");
 
-                // Xác nhận kết quả và đóng màn hình AddAlarmActivity
                 setResult(RESULT_OK, resultIntent);
                 finish();
             }
