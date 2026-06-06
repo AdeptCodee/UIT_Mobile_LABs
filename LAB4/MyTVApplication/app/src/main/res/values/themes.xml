@@ -1,0 +1,6 @@
+<resources>
+    <!-- Base application theme kế thừa từ Leanback để hỗ trợ các thành phần TV -->
+    <style name="Theme.MyTVApplication" parent="Theme.Leanback">
+        <!-- Tuyệt đối không dùng AppCompat hay Material ở đây -->
+    </style>
+</resources>
