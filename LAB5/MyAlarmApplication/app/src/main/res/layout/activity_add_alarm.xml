@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="22sp"
+            android:textColor="#000000" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginTop="8dp" android:layout_marginBottom="16dp"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Label"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_marginTop="32dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A New Alarm!"
+            android:backgroundTint="#9E9E9E"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Days"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_marginTop="32dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginTop="8dp" android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/chkMonday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:buttonTint="#FF4081"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/chkTuesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FF4081"
+            android:text="Tuesday" />
+
+        <CheckBox
+            android:id="@+id/chkWednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FF4081"
+            android:text="Wednesday" />
+
+        <CheckBox
+            android:id="@+id/chkThursday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FF4081"
+            android:text="Thursday" />
+
+        <CheckBox
+            android:id="@+id/chkFriday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FF4081"
+            android:text="Friday" />
+
+        <CheckBox
+            android:id="@+id/chkSaturday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FF4081"
+            android:text="Saturday" />
+
+        <CheckBox
+            android:id="@+id/chkSunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FF4081"
+            android:text="Sunday" />
+
+        <Button
+            android:id="@+id/btnSaveAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Lưu Báo Thức" />
+
+    </LinearLayout>
+</ScrollView>
