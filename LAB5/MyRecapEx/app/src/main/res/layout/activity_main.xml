@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Background Task" />
+
+    <Button
+        android:id="@+id/btnForeground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Foreground Service" />
+
+    <Button
+        android:id="@+id/btnBound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bind to Service" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả sẽ hiển thị ở đây"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAsyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chạy AsyncTask 1" />
+
+    <Button
+        android:id="@+id/btnModernAsync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chạy Async 2" />
+
+</LinearLayout>
